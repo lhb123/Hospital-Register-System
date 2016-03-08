@@ -1,0 +1,188 @@
+<com.srdz.bigproject.view.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:layout_width="260dp"
+        android:layout_height="fill_parent"
+        layout="@layout/page_menu" />
+
+    <RelativeLayout
+        android:id="@+id/account_info_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/account_info_contentList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/account_topLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mune"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/account_info_muenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:src="@drawable/option" />
+
+            <!-- 这个TextView的android:layout_marginLeft属性2个字设置为110dp，4个字设置为85dp -->
+
+            <TextView
+                android:id="@+id/menuRecommendIconText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/account_info"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <!-- 添加新布局 -->
+
+        <LinearLayout
+            android:id="@+id/account_info_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/account_topLinearLayout"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/wodexinxi_bg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/account_info_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/head_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/account_info_icon"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/account_info_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/account_info"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/account_info_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/account_info"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/account_info_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/account_info"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TabHost
+                android:id="@android:id/tabhost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <TabWidget
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </TabWidget>
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:id="@+id/account_info_tab1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="暂无信息"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/account_info_tab2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="暂无病历"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/account_info_tab3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="暂无收藏"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.srdz.bigproject.view.SlidingLayout>

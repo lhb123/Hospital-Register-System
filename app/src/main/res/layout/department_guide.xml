@@ -1,0 +1,122 @@
+<com.srdz.bigproject.view.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:layout_width="260dp"
+        android:layout_height="fill_parent"
+        layout="@layout/page_menu" />
+
+    <RelativeLayout
+        android:id="@+id/departement_guide_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/departement_guide_contentList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mune"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/departement_guide_muenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:src="@drawable/option" />
+
+            <!-- 这个TextView的android:layout_marginLeft属性2个字设置为110dp，4个字设置为85dp -->
+
+            <TextView
+                android:id="@+id/departement_guide_pageName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/department_detail"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <!-- 添加新布局 -->
+
+        <ImageView
+            android:id="@+id/first_itemImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearlayout1"
+            android:src="@drawable/deguide" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/first_itemImage"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearlayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ListView
+                    android:id="@+id/department_guide_button"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:scrollbarStyle="outsideOverlay" >
+                </ListView>
+
+                <RelativeLayout
+                    android:id="@+id/guide_right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/department_guide_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/guide_buttonsure"
+                        android:layout_alignParentTop="true"
+                        android:background="#ffffff"
+                        android:clipToPadding="false"
+                        android:divider="@null"
+                        android:scrollbarStyle="outsideOverlay" >
+                    </ListView>
+
+                    <Button
+                        android:id="@+id/guide_buttonsure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="确认挂号"
+                        android:textSize="20sp"
+                        android:background="@drawable/departsurebuttons"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.srdz.bigproject.view.SlidingLayout>

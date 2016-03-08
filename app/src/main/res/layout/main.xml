@@ -1,0 +1,193 @@
+<com.srdz.bigproject.view.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:slider="http://schemas.android.com/apk/res/com.srdz.bigproject"
+    android:id="@+id/slidingLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:layout_width="260dp"
+        android:layout_height="fill_parent"
+        layout="@layout/page_menu" />
+
+    <RelativeLayout
+        android:id="@+id/main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/main_contentList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/topLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mune"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/main_muenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:src="@drawable/option" />
+
+            <!-- 这个TextView的android:layout_marginLeft属性2个字设置为110dp，4个字设置为85dp -->
+
+            <TextView
+                android:id="@+id/menuRecommendIconText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/home"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <ImageButton
+                android:id="@+id/main_changeUserButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_changeuser" />
+        </LinearLayout>
+
+        <!-- 添加新布局 -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topLinearLayout"
+            android:orientation="vertical" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/adv_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp" >
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/viewGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/adv_pager"
+                android:layout_marginTop="-25px"
+                android:gravity="right"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_below"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/adv_pager"
+                android:background="@drawable/main_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/main_jiankangkepuButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:src="@drawable/main_jiankangkepu" />
+
+                    <ImageButton
+                        android:id="@+id/main_wodexinxiButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:src="@drawable/main_wodexinxi" />
+
+                    <ImageButton
+                        android:id="@+id/main_codeButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:src="@drawable/main_code" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/common_sense"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/account_info"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/code"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    tools:context=".MainActivity" >
+
+                    <com.srdz.bigproject.communal.SlideView
+                        android:id="@+id/slider"
+                        android:layout_width="320dp"
+                        android:layout_height="96dp"
+                        android:layout_centerInParent="true"
+                        slider:effectiveLength="190dp"
+                        slider:effectiveVelocity="1300dp"
+                        slider:maskText="@string/slider_text"
+                        slider:maskTextMarginLeft="60dp"
+                        slider:maskTextMarginTop="60dp"
+                        slider:maskTextSize="30sp"
+                        slider:slidableLength="208dp"
+                        slider:slider="@drawable/arrow"
+                        slider:sliderMarginLeft="22dp"
+                        slider:sliderMarginTop="24dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.srdz.bigproject.view.SlidingLayout>

@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/forget_namepwd"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/forget_email"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/strInputAccHint"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true"
+            android:singleLine="true" >
+        </EditText>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/findPwdButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/forget_namepwd"
+        android:layout_marginTop="35dp"
+        android:background="#00000000"
+        android:src="@drawable/forget_findpwdbutton" />
+
+</RelativeLayout>

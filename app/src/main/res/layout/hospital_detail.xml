@@ -1,0 +1,127 @@
+<com.srdz.bigproject.view.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:layout_width="260dp"
+        android:layout_height="fill_parent"
+        layout="@layout/page_menu" />
+
+    <RelativeLayout
+        android:id="@+id/hospitalDetail_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/hospitalDetail_contentList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/topLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/mune"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/hospitalDetail_muenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:src="@drawable/option" />
+
+            <!-- 这个TextView的android:layout_marginLeft属性2个字设置为110dp，4个字设置为85dp -->
+
+            <TextView
+                android:id="@+id/hospitalDetail_pageName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/hospital_detail"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <!--
+                 <ImageView
+                android:id="@+id/hospitalDetail_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:src="@drawable/save1" />
+            -->
+
+        </LinearLayout>
+
+        <!-- 添加新布局 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/topLinearLayout"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/hospital_detail_imageButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/hosiptal1" />
+
+                <TextView
+                    android:id="@+id/hospital_detail_textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="重庆协和医院现有医疗业务用房16000平方米，编制床位300张，医院坚持诚信办院、人才立院、科技兴院、特色强院的办院宗旨已发展成为一家集医疗、预防、保健、康复、教研为一体的现代化综合性医院。" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hospital_detail_textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="协和医院地址：座落于重庆市石桥铺渝州路60号" />
+
+            <Button
+                android:id="@+id/hospital_detail_button1"
+                android:layout_width="fill_parent"
+                  android:layout_height="40dp"
+                android:background="@drawable/buttons1"
+                android:text="科室导诊" />
+
+            <TextView
+                android:id="@+id/hospital_detail_textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="名医风采展" />
+
+            <ListView
+                android:id="@+id/hospital_detail_listView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:divider="@null"
+                android:scrollbarStyle="outsideOverlay" >
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.srdz.bigproject.view.SlidingLayout>

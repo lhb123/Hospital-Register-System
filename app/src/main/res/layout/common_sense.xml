@@ -1,0 +1,142 @@
+<com.srdz.bigproject.view.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:layout_width="260dp"
+        android:layout_height="fill_parent"
+        layout="@layout/page_menu" />
+<RelativeLayout 
+        android:id="@+id/main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/common_sense_contentList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mune"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/common_sense_muenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:src="@drawable/option" />
+
+            <!-- 这个TextView的android:layout_marginLeft属性2个字设置为110dp，4个字设置为85dp -->
+
+            <TextView
+                android:id="@+id/menuRecommendIconText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="5dp"
+                android:text="健康科普"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <!-- 添加新布局 -->
+        
+        <TextView
+                android:id="@+id/common_sense_textViews1"
+                android:layout_below="@+id/linearlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:layout_marginBottom="10dp"
+                android:text="冬季怎样预防疾病"
+       />
+        <ImageView 
+     android:layout_below="@+id/common_sense_textViews1"       
+    android:id="@+id/common_sense_itemImage1"
+	android:src="@drawable/common_sense1"
+	android:layout_alignParentRight="true"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	/> 
+     <TextView
+                android:id="@+id/common_sense_textViews2"
+                android:layout_below="@+id/common_sense_textViews1"
+                android:layout_toLeftOf="@+id/common_sense_itemImage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="研究表明，一个预防冬季疾病最有效的方法就是运动。每个早上最好出门走了一两公里路， 当然你要选择轻松的散步。清晨的锻炼有助于预防感冒和流感。记住要深呼吸哦。我们可以尝试用新鲜的水果，它们含有的矿物质是远远优于糖果。我们必须保证通风,在睡觉的时候我们应该在房间打开窗户。保证我们的房间有新鲜的空气进入。"
+       />
+      <TextView
+                android:id="@+id/common_sense_textViews3"
+                android:layout_below="@+id/common_sense_itemImage1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="冬季健康食谱"
+       />
+       <ImageView 
+     android:layout_below="@+id/common_sense_textViews3"       
+    android:id="@+id/common_sense_itemImage2"
+	android:src="@drawable/common_sense2"
+	android:layout_alignParentLeft="true"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	/> 
+     <TextView
+                android:id="@+id/common_sense_textViews4"
+                android:layout_below="@+id/common_sense_textViews3"
+                android:layout_toRightOf="@+id/common_sense_itemImage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="冬季我们要适当增加主食和油脂的摄入，保证优质蛋白质的供应。狗肉、羊肉、牛肉、鸡肉、鹿肉、虾、鸽、鹌鹑、海参等食物中富含蛋白质及脂肪，产热量多，中医认为有益肾壮阳、温中暖下、补气生血的功能，御寒效果最好。"
+       />
+     
+     <TextView
+                android:id="@+id/common_sense_textViews5"
+                android:layout_below="@+id/common_sense_itemImage2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="生活小贴士"
+       />
+     <ImageView 
+     android:layout_below="@+id/common_sense_textViews5"       
+    android:id="@+id/common_sense_itemImage3"
+	android:src="@drawable/common_3"
+	android:layout_alignParentLeft="true"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	/> 
+	<TextView
+                android:id="@+id/common_sense_textViews6"
+                android:layout_below="@+id/common_sense_textViews5"
+                android:layout_toRightOf="@+id/common_sense_itemImage3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="每天上午和下午应各开窗通风1次，每次不少于半小时。上午9～11时、下午2～4时是开窗换气的最佳时间，因为这两个时间段内空气质量最好。厨房是室内空气污染的重要来源，在做饭时要开启排气扇或抽油烟机，及时排除有害气体。"
+       />
+    </RelativeLayout>
+</com.srdz.bigproject.view.SlidingLayout>

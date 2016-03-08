@@ -1,0 +1,103 @@
+<com.srdz.bigproject.view.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:layout_width="260dp"
+        android:layout_height="fill_parent"
+        layout="@layout/page_menu" />
+
+    <RelativeLayout
+        android:id="@+id/aboutus_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/login_bg"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mune"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/aboutus_muenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:visibility="invisible"
+                android:src="@drawable/option" />
+
+            <!-- 这个TextView的android:layout_marginLeft属性2个字设置为110dp，4个字设置为85dp -->
+
+            <TextView
+                android:id="@+id/aboutus_PageName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/aboutus"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <!-- 添加新布局 -->
+
+        <LinearLayout
+            android:id="@+id/aboutus_contentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearlayout1"
+            android:cacheColorHint="#00000000"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/aboutus_textViews1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearlayout1"
+                android:gravity="left"
+                android:text="开发团队：私人订制"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/aboutus_textViews2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutus_textViews1"
+                android:gravity="left"
+                android:text="项目策划：我就是那个贱人"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/aboutus_textViews3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutus_textViews2"
+                android:gravity="left"
+                android:text="功能模块：Singlelines  为 什么"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/aboutus_textViews4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutus_textViews3"
+                android:gravity="left"
+                android:text="界面设计与美化：paradise   baby.   Soul "
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.srdz.bigproject.view.SlidingLayout>

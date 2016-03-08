@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/activity/AccountInfoActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/activity/AgreementActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/activity/CaptureActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/activity/CommonSenseActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/activity/DepartmentGuideActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/activity/ForgetActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/activity/HospitalDetailActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/activity/LoginActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/activity/MainActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/activity/RegisterActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/activity/RegistrationActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/activity/ServeActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/activity/SplashScreenActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/camera/CameraManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/communal/NotificationDoctorThread.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/communal/NotificationRegistrationThread.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/communal/PageMenu.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/communal/ShowNotification.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/srdz/bigproject/view/SlidingLayout.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

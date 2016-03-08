@@ -1,0 +1,235 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="fill_parent"
+    android:background="@drawable/menu_bg"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/menuUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp" >
+
+            <ImageView
+                android:id="@+id/userImageShow"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="28dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/head_icon" />
+
+            <TextView
+                android:id="@+id/userPersonNameShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/userImageShow"
+                android:text="@string/no_login"
+                android:textColor="@color/menu_bg"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#00C8AA" />
+
+        <RelativeLayout
+            android:id="@+id/menuHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:id="@+id/menuHomeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:layout_toRightOf="@+id/menuHomeIcon"
+                android:text="@string/home"
+                android:textColor="@color/menu_bg"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#00C8AA" />
+
+        <RelativeLayout
+            android:id="@+id/menuRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:id="@+id/menuGuahaoIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_guahao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:layout_toRightOf="@+id/menuGuahaoIcon"
+                android:text="@string/guahao"
+                android:textColor="@color/menu_bg"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#00C8AA" />
+
+        <RelativeLayout
+            android:id="@+id/menuCommonSense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:id="@+id/menuJiankangkepuIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_jiankangkepu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:layout_toRightOf="@+id/menuJiankangkepuIcon"
+                android:text="@string/jiankangkepu"
+                android:textColor="@color/menu_bg"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#00C8AA" />
+
+        <RelativeLayout
+            android:id="@+id/menuService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:id="@+id/menuKefuIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_kefu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:layout_toRightOf="@+id/menuKefuIcon"
+                android:text="@string/kefu"
+                android:textColor="@color/menu_bg"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#00C8AA" />
+
+        <RelativeLayout
+            android:id="@+id/menuSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:id="@+id/menuSettingIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:layout_toRightOf="@+id/menuSettingIcon"
+                android:text="@string/setting"
+                android:textColor="@color/menu_bg"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#00C8AA" />
+
+        <RelativeLayout
+            android:id="@+id/menuAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:id="@+id/menuAboutIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:layout_toRightOf="@+id/menuAboutIcon"
+                android:text="@string/aboutus"
+                android:textColor="@color/menu_bg"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

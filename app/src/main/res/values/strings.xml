@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">施仁定治</string>
+    <string name="strInputAccHint">输入电子邮箱</string>
+    <string name="strInputPsw">输入密码</string>
+    <string name="strAccInputLabel">电子邮箱</string>
+    <string name="strPswInputLabel">密码</string>
+    <string name="queren_password">确认密码</string>
+    <string name="again_password">再次输入密码</string>
+    <string name="name">姓名</string>
+    <string name="sex">性别</string>
+    <string name="idcard">身份证号码</string>
+    <string name="tel">电话号码</string>
+    <string name="add">所在地区</string>
+    <string name="province">省</string>
+    <string name="city">市</string>
+    <string name="no_login">未登录</string>
+    <string name="home">主页</string>
+    <string name="guahao">智能挂号</string>
+    <string name="jiankangkepu">健康科普</string>
+    <string name="kefu">客服咨询</string>
+    <string name="setting">设置</string>
+    <string name="agreement">用户协议</string>
+    <string name="aboutus">关于</string>
+    <string name="slider_text">滑动智能挂号</string>
+    <string name="login">登 录</string>
+    <string name="register">注 册</string>
+    <string name="username_empty">电子邮箱为空，请重新输入！</string>
+    <string name="username_valid">您必须输入有效的电子邮箱！</string>
+    <string name="userpwd_empty">密码为空，请重新输入！</string>
+    <string name="userpwd_short">密码长度过短，请重新输入！</string>
+    <string name="userPwdAgain_empty">确认密码为空，请重新输入！</string>
+    <string name="userPwd_error">两次输入的密码不一致，请重新输入！</string>
+    <string name="userPersonName_empty">姓名为空，请重新输入！</string>
+    <string name="userIdcard_empty">身份证号码为空，请重新输入！</string>
+    <string name="userIdcard_valid">您必须输入有效18位身份证号！</string>
+    <string name="userTel_empty">电话号码为空，请重新输入！</string>
+    <string name="userIdcard_error">身份证号码错误，请重新输入！</string>
+    <string name="userTel_error">电话号码错误，请重新输入！</string>
+    <string name="agreement_error">请先同意服务条款和隐私政策！</string>
+    <string name="register_fail">您输入的电子邮箱已经存在，请重新输入！</string>
+    <string name="register_sucess">注册成功！</string>
+    <string name="login_sucess">登陆成功！</string>
+    <string name="login_fail">登陆失败！请输入正确的电子邮箱与密码！</string>
+    <string name="login_fails">登陆失败！请先验证您的电子邮箱！</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="save_password">记住密码</string>
+    <string name="auto_login">自动登录</string>
+    <string name="read">我已阅读并同意相关服务条款和隐私政策</string>
+    <string name="forget_psw">忘记密码</string>
+    <string name="registration">挂号</string>
+    <string name="doctor_info">名医信息</string>
+    <string name="code">扫码缴费</string>
+    <string name="common_sense">健康科普</string>
+    <string name="account_info">我的信息</string>
+    <string name="choose_hospital">选择医院</string>
+    <string name="hospital_detail">医院信息</string>
+    <string name="department_detail">科室导航</string>
+    <string name="account_info_xinxi">信息</string>
+    <string name="account_info_bingli">病历</string>
+    <string name="account_info_shoucang">收藏</string>
+
+    <string-array name="province_arry">
+        <item>重庆</item>
+        <item>陕西</item>
+    </string-array>
+    <string-array name="city_chongqing_arry">
+        <item>重庆</item>
+    </string-array>
+    <string-array name="city_shannxi_arry">
+        <item>西安</item>
+    </string-array>
+    <string-array name="hospital_name">
+        <item>重庆市协和医院</item>
+        <item>重庆市西南医院</item>
+        <item>重庆市新桥医院</item>
+        <item>重庆市大坪医院</item>
+        <item>重庆市中山医院</item>
+        <item>重庆市中医院</item>
+    </string-array>
+    <string-array name="department_name">
+        <item>未选择</item>
+        <item>急诊科</item>
+        <item>皮肤科</item>
+        <item>胃肠科</item>
+        <item>肝胆科</item>
+        <item>儿科</item>
+    </string-array>
+    <string-array name="doctor_name">
+        <item>未选择</item>
+        <item>冉隆华</item>
+        <item>淡明斌</item>
+        <item>张成妹</item>
+        <item>杜咏琴</item>
+        <item>吴小兵</item>
+    </string-array>
+
+</resources>

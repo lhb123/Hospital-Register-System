@@ -1,0 +1,108 @@
+<com.srdz.bigproject.view.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:layout_width="260dp"
+        android:layout_height="fill_parent"
+        layout="@layout/page_menu" />
+
+    <!-- 主体布局 -->
+
+    <RelativeLayout
+        android:id="@+id/main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/registration_contentList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/topLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mune"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/registration_muenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:src="@drawable/option" />
+
+            <!-- 这个TextView的android:layout_marginLeft属性2个字设置为110dp，4个字设置为85dp -->
+
+            <TextView
+                android:id="@+id/menuRecommendIconText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/choose_hospital"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <!-- 添加新布局 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topLinearLayout"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:layout_marginTop="10dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/registration_autoCompleteTextView1"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="6"
+                    android:hint="请输入名称搜索医院" >
+                </AutoCompleteTextView>
+
+                <Button
+                    android:id="@+id/registration_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/search2"
+                 />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/registration_listview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:divider="@null"
+                android:scrollbarStyle="outsideOverlay" >
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.srdz.bigproject.view.SlidingLayout>

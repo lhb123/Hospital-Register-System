@@ -1,0 +1,175 @@
+<com.srdz.bigproject.view.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:layout_width="260dp"
+        android:layout_height="fill_parent"
+        layout="@layout/page_menu" />
+
+<RelativeLayout 
+        android:id="@+id/serve_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/serve_contentList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mune"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/serve_muenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:visibility="invisible"
+                android:src="@drawable/option" />
+
+            <!-- 这个TextView的android:layout_marginLeft属性2个字设置为110dp，4个字设置为85dp -->
+
+            <TextView
+                android:id="@+id/serve_PageName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="5dp"
+                android:text="客服咨询"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <!-- 添加新布局 -->
+    <TextView
+                android:id="@+id/serve_textViews1"
+                android:layout_below="@+id/linearlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="25sp"
+                android:layout_marginBottom="10dp"
+                android:text="请选择医院"
+       />
+
+    
+	<Spinner
+            android:id="@+id/serve_hospital"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/serve_textViews1"
+            android:background="@drawable/qq_edit_login"
+            android:entries="@array/hospital_name"
+            android:layout_toLeftOf="@+id/serve_1"
+            android:saveEnabled="true" />
+	 <ImageView 
+    android:layout_below="@+id/serve_textViews1"       
+    android:id="@+id/serve_1"
+	android:src="@drawable/serve"
+	android:layout_alignParentRight="true"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	/> 
+	<TextView
+                android:id="@+id/serve_textViews2"
+                android:layout_below="@+id/serve_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="25sp"
+                android:layout_marginBottom="10dp"
+                android:text="请选择科室"
+       />
+    	<Spinner
+            android:id="@+id/serve_department"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/serve_textViews2"
+            android:background="@drawable/qq_edit_login"
+            android:entries="@array/department_name"
+            android:layout_toLeftOf="@+id/serve_2"
+            android:saveEnabled="true" />   
+             <ImageView 
+    android:layout_below="@+id/serve_textViews2"       
+    android:id="@+id/serve_2"
+	android:src="@drawable/serve"
+	android:layout_alignParentRight="true"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	/>  
+            <TextView
+                android:id="@+id/serve_textViews3"
+                android:layout_below="@+id/serve_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="25sp"
+                android:layout_marginBottom="10dp"
+                android:text="请选择医生"
+       />
+        <Spinner
+            android:id="@+id/serve_doctor"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/serve_textViews3"
+            android:background="@drawable/qq_edit_login"
+            android:entries="@array/doctor_name"
+            android:layout_toLeftOf="@+id/serve_3"
+            android:saveEnabled="true" />
+    	 <ImageView 
+    android:layout_below="@+id/serve_textViews3"       
+    android:id="@+id/serve_3"
+	android:src="@drawable/serve"
+	android:layout_alignParentRight="true"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	/>  
+    	
+     <TextView
+                android:id="@+id/servetalk_textViews1"
+                android:layout_below="@+id/serve_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                 android:textSize="20sp"
+                android:text="咨询内容："
+       />	 
+    	 
+     <EditText
+                android:id="@+id/servetalk_textViews"
+                android:layout_below="@+id/servetalk_textViews1"
+                android:layout_above="@+id/serve_button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                 android:textSize="20sp"
+                 android:paddingTop="10dp"
+                 android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+                 android:background="@drawable/serve_textbg"
+       />
+     
+     <Button
+                android:id="@+id/serve_button1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="确认咨询" />
+    </RelativeLayout>
+    </com.srdz.bigproject.view.SlidingLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><declare-styleable name="SlideView">
+        <attr name="maskText" format="string" />
+        <attr name="maskTextSize" format="dimension" />
+        <attr name="maskTextMarginLeft" format="dimension" />
+        <attr name="maskTextMarginTop" format="dimension" />
+        <attr name="slider" format="reference" />
+        <attr name="sliderMarginLeft" format="dimension" />
+        <attr name="sliderMarginTop" format="dimension" />
+        <attr name="slidableLength" format="dimension" />
+        <attr name="effectiveLength" format="dimension" />
+        <attr name="effectiveVelocity" format="dimension" />
+    </declare-styleable>
+
+</resources>
